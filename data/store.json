@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "baselineRules": [
+    {
+      "id": "baseline-sparse-input",
+      "text": "Sparse input is not permission to invent intent. Preserve ambiguity until the missing variable is actually supplied or evidenced.",
+      "source": "Calibration from conversation, 2026-08-14",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "demo": false
+    },
+    {
+      "id": "baseline-current-not-historical",
+      "text": "Use current baseline before historical adaptations; do not treat an older trauma pattern as the default current explanation without present evidence.",
+      "source": "August 2026 profile",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "demo": false
+    },
+    {
+      "id": "baseline-overfunctioning",
+      "text": "Over-functioning remains an active tendency when something important appears neglected, mishandled, misunderstood, or at risk of falling apart.",
+      "source": "August 2026 profile",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "demo": false
+    },
+    {
+      "id": "baseline-state-dependent",
+      "text": "Model state explicitly: severe activation can make older strategies more available even when regulated baseline has changed substantially.",
+      "source": "August 2026 profile",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "demo": false
+    }
+  ],
+  "calibrations": [
+    {
+      "id": "cal-20260814-motive",
+      "predictionId": null,
+      "classification": "miss",
+      "actual": "Ciera rejected the simulator's invented claim that she was testing whether it could recover.",
+      "why": "The model assigned an intention to a sparse prompt without evidence.",
+      "proposedRule": "Sparse input is not permission to invent intent. Preserve ambiguity until the missing variable is supplied or evidenced.",
+      "status": "promoted",
+      "promotedBaselineId": "baseline-sparse-input",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "demo": false
+    }
+  ],
+  "predictions": [],
+  "audits": [],
+  "misses": [],
+  "syntheticHits": []
+}
