@@ -1,0 +1,26 @@
+{
+  "name": "sim-ciera-chatgpt-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Private ChatGPT MCP App for the Sim-Ciera behavioral decision simulator.",
+  "scripts": {
+    "build": "node scripts/build-widget.mjs",
+    "start": "npm run build && node server.js",
+    "dev": "npm run build && node server.js",
+    "validate": "node --check server.js && node scripts/validate.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/ext-apps": "^1.0.1",
+    "@modelcontextprotocol/sdk": "^1.20.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
