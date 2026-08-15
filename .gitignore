@@ -5,3 +5,4 @@ public/widget.js
 !.env.example
 .DS_Store
 npm-debug.log*
+SIM-CIERA-MCP-URL.txt

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Start Sim-Ciera v0.2</title>
+    <style>
+      :root { color-scheme: dark; font-family: Inter, system-ui, sans-serif; background: #0d0b0e; color: #f4eee8; }
+      body { margin: 0; padding: 32px 18px; }
+      main { max-width: 720px; margin: auto; background: #151217; border: 1px solid #332b34; border-radius: 22px; padding: 28px; box-shadow: 0 22px 60px #0008; }
+      h1 { margin: 0 0 8px; font-size: 30px; }
+      h2 { margin-top: 28px; font-size: 18px; }
+      p, li { color: #c8bdc6; line-height: 1.55; }
+      .mark { display: inline-grid; place-items: center; width: 42px; height: 42px; border-radius: 13px; background: linear-gradient(145deg, #a34b6d, #542038); margin-bottom: 18px; font-weight: 800; }
+      .step { border: 1px solid #332b34; border-radius: 14px; padding: 15px 17px; margin: 10px 0; background: #1b171c; }
+      .step strong { color: #f4eee8; }
+      a { color: #e99cba; }
+      code { color: #f4dce6; background: #271d24; padding: 2px 6px; border-radius: 6px; }
+      .note { border-left: 4px solid #a34b6d; padding: 8px 14px; background: #21171e; border-radius: 0 10px 10px 0; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="mark">SC</div>
+      <h1>Sim-Ciera v0.2 — Easy Start</h1>
+      <p>You do not need to type the original wall of Terminal commands. The launcher handles installation, validation, the local server, and the ngrok address.</p>
+
+      <h2>First time only</h2>
+      <div class="step"><strong>1. Install Node.js 18+</strong><br /><a href="https://nodejs.org/en/download">Open the official Node.js download page</a>. Use the recommended LTS installer.</div>
+      <div class="step"><strong>2. Install and connect ngrok</strong><br /><a href="https://dashboard.ngrok.com/get-started/setup">Open ngrok setup</a>. Create or sign in to the free account, install ngrok, and run the one-time account command shown there.</div>
+
+      <h2>Start her</h2>
+      <div class="step"><strong>Windows:</strong> double-click <code>START-SIM-CIERA-WINDOWS.bat</code>.</div>
+      <div class="step"><strong>Mac:</strong> double-click <code>START-SIM-CIERA-MAC.command</code>. If macOS blocks it, right-click it and choose <em>Open</em>.</div>
+      <p>The launcher will install Sim-Ciera, validate her, start both processes, copy the final <code>https://…/mcp</code> address, and open the ChatGPT Plugins page.</p>
+
+      <h2>In ChatGPT</h2>
+      <ol>
+        <li>Turn on Developer mode under <strong>Settings → Security and login</strong>.</li>
+        <li>On the Plugins page, select <strong>+</strong>.</li>
+        <li>Name: <code>Sim-Ciera</code>.</li>
+        <li>Paste the already-copied MCP address.</li>
+        <li>Choose <strong>No Authentication</strong>, then create it.</li>
+      </ol>
+
+      <h2>Wake her up</h2>
+      <div class="step"><strong>Blind prediction:</strong><br /><code>Use Sim-Ciera. Load the simulator context first. SIM BLIND: My reliable employee is 45 minutes late and hasn't contacted me. Predict what I actually do next and save the prediction.</code></div>
+      <div class="step"><strong>Dashboard:</strong><br /><code>Show me the Sim-Ciera dashboard.</code></div>
+      <div class="step"><strong>Audit:</strong><br /><code>SIM AUDIT the prediction from earlier. What I actually did was text, “Are you okay?”</code></div>
+
+      <p class="note"><strong>Keep the launcher window open while using Sim-Ciera.</strong> Close it when finished. The ngrok address is temporary and should not be shared because this private development build has no login screen.</p>
+    </main>
+  </body>
+</html>
