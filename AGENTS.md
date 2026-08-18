@@ -1,22 +1,22 @@
-# Codex instructions for Sim-Ciera
+# Codex instructions for Ciera
 
-Use the current official OpenAI Plugin / ChatGPT MCP documentation before changing integration code.
+Before changing this repository, read `CIERA_CANONICAL.md`. Despite the historical filename, it is now a living current-state document, not a frozen architecture contract.
 
-Product invariants:
+Build from Ciera's latest explicit direction. If newer user direction conflicts with that file, update the file to match the newer direction rather than treating the file as higher authority than Ciera.
 
-1. REAL CIERA and SIM-CIERA remain distinct. Predictions are never silently converted to facts about Real Ciera.
-2. Preserve prediction history. A miss remains a miss after calibration.
-3. Corrections produce proposed generalized rules; do not promote them to Baseline without explicit confirmation.
-4. A Synthetic Hit is a genuinely new prediction later confirmed, not a restatement of known profile information.
-5. Do not invent missing facts, intentions, or motives. Sparse input remains ambiguous.
-6. Baseline, relationship, stakes, and current state outweigh generic stimulus-response rules.
-7. Do not turn every situation into trauma analysis, confrontation, betrayal, or pathology.
-8. Keep sensitive psychological source material out of public/static frontend assets.
+Do not independently fork the product into a competing identity or revive an older design without a reason grounded in Ciera's latest direction. Preserve old versions and experiments as history instead of silently rewriting them.
 
-Before finishing a change:
+Current direction: one private general-purpose Ciera with many abilities; SIM is one optional predictive module inside that system. This is current state, not permanent law.
 
-- run `npm run build`
-- run `npm run validate`
-- verify `server.js` still exposes `/mcp`
-- verify mutating tools have accurate annotations
-- verify the widget still supports the audit and explicit promotion flow
+Data-integrity rules remain stable:
+
+1. Preserve prediction history. A miss remains a miss after calibration.
+2. Corrections produce proposed generalized rules; do not promote them to Baseline without explicit confirmation.
+3. A Synthetic Hit is a genuinely new prediction later confirmed, not a restatement of known profile information.
+4. Do not invent missing facts, intentions, motives, events, or memories.
+5. Keep sensitive psychological source material out of public/static frontend assets and public repositories.
+6. Do not claim an integration works merely because its configuration exists; verify it with a live call.
+
+When parallel work appears to conflict, preserve the competing states long enough to reconcile them against Ciera's newest direction rather than blindly overwriting one.
+
+Before finishing a change, run the repo's current validation/build checks and make sure the implementation reflects the latest living project state.
