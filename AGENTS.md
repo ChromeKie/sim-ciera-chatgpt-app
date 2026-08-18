@@ -1,22 +1,22 @@
 # Codex instructions for Ciera
 
-Before changing this repository, read `CIERA_CANONICAL.md`. It is the active source of truth for product identity, architecture, privacy, and change control.
+Before changing this repository, read `CIERA_CANONICAL.md`. Despite the historical filename, it is now a living current-state document, not a frozen architecture contract.
 
-Do not silently redesign Ciera from a general-purpose private personal AI back into a simulator-only product. The SIM system is one module inside Ciera.
+Build from Ciera's latest explicit direction. If newer user direction conflicts with that file, update the file to match the newer direction rather than treating the file as higher authority than Ciera.
 
-Use the current official OpenAI Plugin / ChatGPT MCP documentation before changing integration code.
+Do not independently fork the product into a competing identity or revive an older design without a reason grounded in Ciera's latest direction. Preserve old versions and experiments as history instead of silently rewriting them.
 
-Product invariants:
+Current direction: one private general-purpose Ciera with many abilities; SIM is one optional predictive module inside that system. This is current state, not permanent law.
 
-1. Ciera is the primary personal AI. SIM modes are an optional prediction module.
-2. Preserve prediction history. A miss remains a miss after calibration.
-3. Corrections produce proposed generalized rules; do not promote them to Baseline without explicit confirmation.
-4. A Synthetic Hit is a genuinely new prediction later confirmed, not a restatement of known profile information.
-5. Do not invent missing facts, intentions, motives, or memories. Sparse input remains ambiguous.
-6. Baseline, relationship, stakes, and current state outweigh generic stimulus-response rules.
-7. Do not turn every situation into trauma analysis, confrontation, betrayal, or pathology.
-8. Keep sensitive psychological source material out of public/static frontend assets and public repositories.
-9. Do not claim an integration works merely because its configuration exists; verify with a live call.
-10. If a requested architectural change conflicts with `CIERA_CANONICAL.md`, stop and ask Ciera unless she explicitly requested that exact change.
+Data-integrity rules remain stable:
 
-Before finishing a change, run the repo's current validation/build checks and verify that the implementation still conforms to `CIERA_CANONICAL.md`.
+1. Preserve prediction history. A miss remains a miss after calibration.
+2. Corrections produce proposed generalized rules; do not promote them to Baseline without explicit confirmation.
+3. A Synthetic Hit is a genuinely new prediction later confirmed, not a restatement of known profile information.
+4. Do not invent missing facts, intentions, motives, events, or memories.
+5. Keep sensitive psychological source material out of public/static frontend assets and public repositories.
+6. Do not claim an integration works merely because its configuration exists; verify it with a live call.
+
+When parallel work appears to conflict, preserve the competing states long enough to reconcile them against Ciera's newest direction rather than blindly overwriting one.
+
+Before finishing a change, run the repo's current validation/build checks and make sure the implementation reflects the latest living project state.
